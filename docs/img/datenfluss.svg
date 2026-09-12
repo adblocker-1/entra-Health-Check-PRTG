@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940 430" width="940" height="430" role="img" aria-label="Datenfluss: Die PRTG-Probe startet das PowerShell-Skript, das sich zuerst bei Entra ID ein Token holt und damit zwei Microsoft-Graph-Endpunkte abfragt. Die Antworten werden zu Zaehlern aggregiert und als eine Zeile PRTG-XML auf stdout zurueckgegeben.">
+  <title>Datenfluss des Intune/Entra-ID-PRTG-Sensors</title>
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 z" fill="#0969da"/>
+    </marker>
+    <marker id="ag" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 z" fill="#1a7f37"/>
+    </marker>
+  </defs>
+
+  <rect width="940" height="430" fill="#f6f8fa"/>
+
+  <!-- ============ Probe ============ -->
+  <rect x="24" y="60" width="256" height="310" rx="12" fill="#ffffff" stroke="#d1d9e0" stroke-width="1.5"/>
+  <text x="152" y="86" text-anchor="middle" font-family="'Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="13" font-weight="600" fill="#1f2328">PRTG Probe (Windows)</text>
+
+  <rect x="48" y="104" width="208" height="56" rx="7" fill="#eef4fb" stroke="#0969da" stroke-width="1.5"/>
+  <text x="152" y="127" text-anchor="middle" font-family="'Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="12.5" font-weight="600" fill="#0a3069">EXE/Script Advanced</text>
+  <text x="152" y="145" text-anchor="middle" font-family="'Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="12.5" font-weight="600" fill="#0a3069">Sensor</text>
+
+  <!-- down arrow: start -->
+  <path d="M108 160 V 214" stroke="#0969da" stroke-width="1.6" fill="none" marker-end="url(#a)"/>
+  <text x="100" y="186" text-anchor="end" font-family="'Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="10.5" fill="#59636e">startet</text>
+  <!-- up arrow: xml -->
+  <path d="M198 214 V 160" stroke="#1a7f37" stroke-width="1.6" fill="none" marker-end="url(#ag)"/>
+  <text x="206" y="186" text-anchor="start" font-family="'Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="10.5" fill="#1a7f37">XML</text>
+
+  <rect x="48" y="216" width="208" height="72" rx="7" fill="#f6f8fa" stroke="#59636e" stroke-width="1.5"/>
+  <text x="152" y="239" text-anchor="middle" font-family="'Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="12" fill="#1f2328">powershell.exe</text>
+  <text x="152" y="258" text-anchor="middle" font-family="'Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="11.5" font-weight="600" fill="#1f2328">Intune-EntraID-PRTG.ps1</text>
+  <text x="152" y="276" text-anchor="middle" font-family="'Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="10.5" fill="#59636e">aggregiert zu 17–18 Kanälen</text>
+
+  <text x="152" y="318" text-anchor="middle" font-family="'Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="10.5" fill="#59636e">Parameter: AppId, TenantId,</text>
+  <text x="152" y="334" text-anchor="middle" font-family="'Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="10.5" fill="#59636e">ClientSecret</text>
+  <text x="152" y="354" text-anchor="middle" font-family="'Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="10.5" fill="#1a7f37">Rückgabe: 1 Zeile, Exit-Code 0</text>
+
+  <!-- ============ Cloud ============ -->
+  <rect x="556" y="40" width="360" height="350" rx="12" fill="#ffffff" stroke="#d1d9e0" stroke-width="1.5"/>
+  <text x="736" y="64" text-anchor="middle" font-family="'Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="13" font-weight="600" fill="#1f2328">Microsoft 365 Tenant</text>
+
+  <rect x="578" y="82" width="316" height="60" rx="7" fill="#eef4fb" stroke="#0969da" stroke-width="1.5"/>
+  <text x="736" y="105" text-anchor="middle" font-family="'Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="12" font-weight="600" fill="#0a3069">Entra ID</text>
+  <text x="736" y="124" text-anchor="middle" font-family="'Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="10.5" fill="#0a3069">login.microsoftonline.com</text>
+
+  <rect x="578" y="188" width="316" height="64" rx="7" fill="#eef4fb" stroke="#0969da" stroke-width="1.5"/>
+  <text x="736" y="210" text-anchor="middle" font-family="'Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="12" font-weight="600" fill="#0a3069">Graph · managedDevices</text>
+  <text x="736" y="230" text-anchor="middle" font-family="'Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="10.5" fill="#0a3069">alle Intune-Geräte</text>
+  <text x="736" y="245" text-anchor="middle" font-family="'Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="10" fill="#59636e">DeviceManagementManagedDevices.Read.All</text>
+
+  <rect x="578" y="298" width="316" height="64" rx="7" fill="#f6f8fa" stroke="#59636e" stroke-width="1.5" stroke-dasharray="4 3"/>
+  <text x="736" y="320" text-anchor="middle" font-family="'Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="12" font-weight="600" fill="#1f2328">Graph · organization</text>
+  <text x="736" y="340" text-anchor="middle" font-family="'Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="10.5" fill="#1f2328">Entra-Connect-Sync-Status</text>
+  <text x="736" y="355" text-anchor="middle" font-family="'Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="10" fill="#59636e">Organization.Read.All · optional</text>
+
+  <!-- ============ Bus ============ -->
+  <path d="M256 252 H 392" stroke="#0969da" stroke-width="1.6" fill="none"/>
+  <path d="M392 252 V 112 H 574" stroke="#0969da" stroke-width="1.6" fill="none" marker-end="url(#a)"/>
+  <path d="M392 252 H 574" stroke="#0969da" stroke-width="1.6" fill="none" marker-end="url(#a)"/>
+  <path d="M392 252 V 330 H 574" stroke="#59636e" stroke-width="1.6" fill="none" stroke-dasharray="4 3" marker-end="url(#a)"/>
+
+  <text x="483" y="100" text-anchor="middle" font-family="'Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="11" font-weight="600" fill="#0a3069">1 · POST client_credentials</text>
+  <text x="483" y="132" text-anchor="middle" font-family="'Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="10" fill="#59636e">liefert access_token</text>
+
+  <text x="483" y="240" text-anchor="middle" font-family="'Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="11" font-weight="600" fill="#0a3069">2 · GET mit Bearer-Token</text>
+  <text x="483" y="272" text-anchor="middle" font-family="'Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="10" fill="#59636e">$select · $top=1000 · Paging</text>
+
+  <text x="483" y="318" text-anchor="middle" font-family="'Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="11" font-weight="600" fill="#1f2328">3 · GET Sync-Status</text>
+  <text x="483" y="350" text-anchor="middle" font-family="'Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="10" fill="#59636e">Fehler hier ist nicht fatal</text>
+
+  <text x="470" y="404" text-anchor="middle" font-family="'Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="10.5" fill="#59636e">Ausgehend HTTPS/443 · TLS 1.2 wird im Skript erzwungen · keine PowerShell-Module nötig</text>
+</svg>
