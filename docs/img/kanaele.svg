@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 340" width="980" height="340" role="img" aria-label="Uebersicht der Sensorkanaele in vier Gruppen: Geraete nach Betriebssystem, Compliance, Verschluesselung und Zustand, sowie Entra Connect. Orange markierte Kanaele haben eine Warngrenze, der Kanal Entra Connect Sync Age erscheint nur bei Hybrid-Tenants.">
+  <title>Kanalübersicht des Sensors</title>
+  <rect width="980" height="340" fill="#f6f8fa"/>
+
+  <!-- Gruppe 1 -->
+  <rect x="24" y="52" width="220" height="216" rx="10" fill="#ffffff" stroke="#d1d9e0" stroke-width="1.5"/>
+  <text x="40" y="76" font-family="'Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="12.5" font-weight="600" fill="#0a3069">Geräte</text>
+  <line x1="40" y1="86" x2="228" y2="86" stroke="#d1d9e0"/>
+  <text x="40" y="112" font-family="'Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="11.5" font-weight="600" fill="#1f2328">Devices Total</text>
+  <text x="40" y="140" font-family="'Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="11.5" fill="#1f2328">Devices Windows</text>
+  <text x="40" y="168" font-family="'Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="11.5" fill="#1f2328">Devices macOS</text>
+  <text x="40" y="196" font-family="'Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="11.5" fill="#1f2328">Devices iOS</text>
+  <text x="40" y="224" font-family="'Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="11.5" fill="#1f2328">Devices Android</text>
+  <text x="40" y="252" font-family="'Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="11.5" fill="#1f2328">Devices Other OS</text>
+
+  <!-- Gruppe 2 -->
+  <rect x="264" y="52" width="220" height="216" rx="10" fill="#ffffff" stroke="#d1d9e0" stroke-width="1.5"/>
+  <text x="280" y="76" font-family="'Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="12.5" font-weight="600" fill="#0a3069">Compliance</text>
+  <line x1="280" y1="86" x2="468" y2="86" stroke="#d1d9e0"/>
+  <text x="280" y="112" font-family="'Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="11.5" fill="#1f2328">Compliant</text>
+  <circle cx="460" cy="136" r="4.5" fill="#bc4c00"/>
+  <text x="280" y="140" font-family="'Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="11.5" font-weight="600" fill="#1f2328">Non-Compliant</text>
+  <text x="280" y="168" font-family="'Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="11.5" fill="#1f2328">In Grace Period</text>
+  <circle cx="460" cy="192" r="4.5" fill="#bc4c00"/>
+  <text x="280" y="196" font-family="'Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="11.5" font-weight="600" fill="#1f2328">Compliance Error</text>
+  <text x="280" y="224" font-family="'Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="11.5" fill="#1f2328">Compliance Unknown</text>
+
+  <!-- Gruppe 3 -->
+  <rect x="504" y="52" width="220" height="216" rx="10" fill="#ffffff" stroke="#d1d9e0" stroke-width="1.5"/>
+  <text x="520" y="76" font-family="'Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="12.5" font-weight="600" fill="#0a3069">Verschlüsselung &amp; Zustand</text>
+  <line x1="520" y1="86" x2="708" y2="86" stroke="#d1d9e0"/>
+  <text x="520" y="112" font-family="'Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="11.5" fill="#1f2328">Encrypted</text>
+  <circle cx="700" cy="136" r="4.5" fill="#bc4c00"/>
+  <text x="520" y="140" font-family="'Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="11.5" font-weight="600" fill="#1f2328">Not Encrypted</text>
+  <circle cx="700" cy="164" r="4.5" fill="#bc4c00"/>
+  <text x="520" y="168" font-family="'Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="11.5" font-weight="600" fill="#1f2328">Stale (&gt;N d no check-in)</text>
+  <text x="520" y="196" font-family="'Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="11.5" fill="#1f2328">Management State managed</text>
+  <circle cx="700" cy="220" r="4.5" fill="#bc4c00"/>
+  <text x="520" y="224" font-family="'Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="11.5" font-weight="600" fill="#1f2328">Management State stuck</text>
+
+  <!-- Gruppe 4 -->
+  <rect x="744" y="52" width="212" height="216" rx="10" fill="#ffffff" stroke="#d1d9e0" stroke-width="1.5"/>
+  <text x="760" y="76" font-family="'Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="12.5" font-weight="600" fill="#0a3069">Entra Connect</text>
+  <line x1="760" y1="86" x2="940" y2="86" stroke="#d1d9e0"/>
+  <text x="760" y="112" font-family="'Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="11.5" fill="#1f2328">Entra Connect Enabled</text>
+  <rect x="752" y="124" width="196" height="46" rx="6" fill="#f6f8fa" stroke="#59636e" stroke-dasharray="4 3"/>
+  <circle cx="934" cy="142" r="4.5" fill="#bc4c00"/>
+  <text x="762" y="146" font-family="'Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="11.5" font-weight="600" fill="#1f2328">Entra Connect Sync Age</text>
+  <text x="762" y="162" font-family="'Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="9.5" fill="#59636e">nur bei Hybrid-Tenant · in Minuten</text>
+  <text x="760" y="196" font-family="'Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="10.5" fill="#59636e">Cloud-only Tenant:</text>
+  <text x="760" y="212" font-family="'Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="10.5" fill="#59636e">Enabled = 0, Sync Age fehlt,</text>
+  <text x="760" y="228" font-family="'Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="10.5" fill="#59636e">Sensor bleibt grün.</text>
+
+  <!-- Legende -->
+  <circle cx="40" cy="296" r="4.5" fill="#bc4c00"/>
+  <text x="54" y="300" font-family="'Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="11" fill="#1f2328">Warngrenze ab Werk gesetzt</text>
+  <rect x="272" y="288" width="16" height="16" rx="4" fill="#f6f8fa" stroke="#59636e" stroke-dasharray="4 3"/>
+  <text x="298" y="300" font-family="'Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="11" fill="#1f2328">erscheint nur unter bestimmten Bedingungen</text>
+  <text x="660" y="300" font-family="'Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="11" fill="#59636e">17 Kanäle cloud-only · 18 mit Entra Connect</text>
+</svg>
